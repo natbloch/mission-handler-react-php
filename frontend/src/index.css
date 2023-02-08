@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+
+.home{
+    width: 800px;
+    margin: 30px auto;
+    background-color: lightgray;
+    border-radius: 20px;
+    padding: 20px 30px;
+    min-height: 400px;
+}
+
+.home .missions h3 {
+    text-align: center;
+    background-color: darkgrey;
+    padding: 7px;
+    border-radius: 5px;
+    color: green;
+    font-size: 18px;
+    
+}
+
+.home .missions > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.home .missions .statusShow h5{
+    font-size: 15px;
+    text-decoration: underline;
+    margin-top:10px;
+}
+
+.home .missions .statusShow span{
+    font-size: 12px;
+    margin-top:5px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.home .missions .statusShow span:hover{
+    text-decoration: underline;
+}
+
+.home .missions .statusShow span:target{
+    text-decoration: underline;
+}
+
+
+.home .missions .nomission{
+    padding: 20px 10px;
+}
+
+.home .missions .each-mission{
+    padding: 7px 19px;
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.home .missions .each-mission h4{
+    text-decoration: underline;    
+    text-transform: uppercase;
+    font-size: 16px;
+    width: 150px;
+}
+
+.home .missions .each-mission p{
+    font-size: 12px;
+}
+
+.home .missions .each-mission p:first-of-type{
+    color: rgb(75, 4, 4);
+    font-size: 15px;
+}
+
+.home .missions .each-mission span.missionstatus{
+    color: orange;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.home .missions .each-mission span.missionstatus.missionstatus-remain{
+    color: green;
+}
+
+
+
+.home .missions .each-mission .actionbox{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.home .missions .each-mission .actionbox span{
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.home .missions .each-mission .actionbox span:hover{
+    text-decoration: underline;
+}
+
+.home .missions .each-mission .actionbox span.delete-mission{
+    color: red;
+}
+
+.home .missions .each-mission .actionbox span.change-status{
+    color:green;
+}
+
+.home .missions .each-mission .actionbox span.change-status.completed{
+    color:orange;
+}
+
+
+.home .missionForm{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: darkgrey;
+    padding: 12px 25px 15px;
+    border-radius: 7px;
+    margin: 19px auto 0;
+}
+
+.home .missionForm h3{
+    color: green;
+}
+
+.home .missionForm label{
+    margin-top: 5px;
+}
+
+.home .missionForm input[type=submit] {
+    background-color: green;
+    color: #FFF;
+    padding: 10px 25px;
+    margin: 10px auto;
+    border: none;
+    cursor: pointer;
+}
+
+.home .missionForm input.error{
+    border: 1px solid red;
+}
+
+
+@media screen and (max-width: 800px) {
+    .home{
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .home .missions .each-mission .actionbox {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .home .missions .each-mission {
+        padding: 7px 19px;
+        background-color: white;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin-top: 18px;
+        gap: 7px;
+    }
+}
+
+
+
